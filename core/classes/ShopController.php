@@ -4,8 +4,10 @@
 namespace core\classes;
 
 
-class ShopController
+class ShopController extends AbstractController
 {
+
+
 
     public function indexAction($param = false) {
 

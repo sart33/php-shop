@@ -1,6 +1,9 @@
-
+<?//= session_id()?>
 
         <main class="main">
+            <h3><?php if(!empty($yes)) {
+                    echo $yes;
+                } ?></h3>
             <div class="intro-slider-container">
                 <div class="owl-carousel owl-simple owl-light owl-nav-inside" data-toggle="owl" data-owl-options='{"nav": false}'>
                     <div class="intro-slide" style="background-image: url(assets/images/demos/demo-2/slider/slide-1.jpg);">

@@ -3,6 +3,7 @@
 
 namespace core\models;
 
+use core\models\DatabaseConnection;
 use \ReflectionClass;
 use \ReflectionProperty;
 use \Exception;
@@ -431,6 +432,14 @@ use \Exception;
              }
          }
          return $wherePart;
+     }
+
+
+
+
+
+     public function logout() {
+
      }
 
 

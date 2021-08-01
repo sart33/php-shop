@@ -3,6 +3,8 @@
 
 namespace core\classes;
 
+use core\models\User;
+use  DateTime;
 
 abstract class AbstractController
 
@@ -19,5 +21,26 @@ abstract class AbstractController
         }
 
     }
+
+    public function redirectTo($routeName, $routeParams = []) {
+
+        $redirect = Routing::generateUrl($routeName, $routeParams);
+        header("Location: $redirect");
+
+
+
+    }
+
+    protected function writeLog($message, $file = 'log.txt', $event = 'Fault') : void {
+
+        $datetime = new DateTime();
+
+        $str = $event . ': ' . $datetime->format('d-m-Y G:i:s') . ' - ' . $message . "\r\n";
+        // Пишем данные в файл. Конкретно - дописываем в конец файла.
+
+        file_put_contents('log/' . $file, $str, FILE_APPEND);
+
+    }
+
 
 }

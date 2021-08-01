@@ -15,6 +15,12 @@ const QTY = 8;
 /***количество ссылок на страницы ***/
 const QTY_LINKS  = 3;
 
+const DB_TYPE = 'mysql';
+const DB_HOST = 'localhost';
+const DB_NAME = 'my_project';
+const DB_USER = 'root';
+const DB_PASS = 'ClaymoreN6';
+
 const ADMIN_CSS_JS = [
     'styles' => [
         'css/site.css',

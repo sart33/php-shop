@@ -3,10 +3,11 @@
 
 namespace core\classes;
 
-
+use core\classes\Routing;
 use core\models\Category;
 use core\models\DatabaseConnection;
 use core\models\Repository;
+use core\classes\ViewHelper as vh;
 
 class CategoryController extends AbstractController
 {
@@ -29,10 +30,14 @@ class CategoryController extends AbstractController
 
 
         ];
-      $param = Category::findBy($params);
+//      $param = Category::findBy($params);
 
-//      $param = Category::save();
+//      $this->redirectTo('product.view', ['id' => 5]);
+
+      $param = Category::save();
 //        $param = Category::remove(3976);
+//       $param = vh::url('product.view', ['id' => 50]);
+
 
 
         return  Parent::render($this->templateName,dirname(__DIR__) . '/views/category/index.tpl.php', $param);

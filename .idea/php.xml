@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+  <component name="PhpStepFilterConfiguration">
+    <skipped_functions>
+      <skipped_function name="core\classes\DeviceController-&gt;parsing" />
+      <skipped_function name="include" />
+      <skipped_function name="core\classes\View-&gt;renderView" />
+      <skipped_function name="core\classes\Routing::parse" />
+      <skipped_function name="core\classes\ClientController-&gt;costAction" />
+      <skipped_function name="core\classes\ParsingController-&gt;parseAction" />
+      <skipped_function name="core\models\DatabaseConnection::getInstance" />
+      <skipped_function name="core\models\DatabaseConnection::query" />
+      <skipped_function name="core\models\User::validateReg" />
+      <skipped_function name="core\classes\SiteController-&gt;registerAction" />
+    </skipped_functions>
+  </component>
+</project>
